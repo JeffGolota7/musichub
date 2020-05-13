@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MusicHub | Feed</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Description when you search on Google" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    <!--these make you appear on google faster-->
+    <link rel="icon" href="images/favicon.ico" />
+    <!--icon for the page-->
+    <link rel="stylesheet" href="../styles/feed.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="parent">
+        <nav>
+          <a href="../index.html"><div class="logo"></div></a>
+          <ul class="nav-links">
+            <li>
+              <a id="current" href="../feed.html">Feed</a>
+            </li>
+            <li>
+              <a href="../discover.html">Discover</a>
+            </li>
+            <li>
+              <a href="../about.html">About Me</a>
+            </li>
+          </ul>
+          <div class="mobile"><i class="fas fa-bars"></i></div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div id="date" class="album">
+        <h1>
+          <script>
+            var today = new Date();
+            var months = [
+              "January",
+              "February",
+              "March",
+              "April",
+              "May",
+              "June",
+              "July",
+              "August",
+              "September",
+              "October",
+              "November",
+              "December",
+            ];
+            var dd = today.getDate();
+            var mm = today.getMonth();
+            var yyyy = today.getFullYear();
+            document.write(months[mm] + " " + dd + ", " + yyyy);
+          </script>
+        </h1>
+      </div>
+      <div class="aside">
+        <ul>
+          <a class="may" href="../index.html"><li>May</li></a>
+          <a class="april" href="april.html"><li>April</li></a>
+          <a class="march" href="march.html"><li>March</li></a>
+          <a class="february" href="february.html"><li>February</li></a>
+          <a class="January" href="january.html"
+            ><li id="current-month">January</li></a
+          >
+        </ul>
+      </div>
+      <div id="feed">
+        <div class="album">
+          <h2>January 31, 2020</h2>
+          <iframe
+            src="https://open.spotify.com/embed/album/2x657XotA7LCsPElXmXX4W"
+            width="100%"
+            height="280"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
+          <iframe
+            src="https://open.spotify.com/embed/album/2ZzatxW5gv1XZ0uai8TKxk"
+            width="100%"
+            height="280"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
+        </div>
+        <div class="album">
+          <h2>January 20, 2020</h2>
+          <iframe
+            src="https://open.spotify.com/embed/album/6WqhLFx4Wrn5WgMVnd365Z"
+            width="100%"
+            height="280"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
+        </div>
+        <div class="album">
+          <h2>January 17, 2020</h2>
+          <iframe
+            src="https://open.spotify.com/embed/album/5sY6UIQ32GqwMLAfSNEaXb"
+            width="100%"
+            height="280"
+            class="favorite"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
+          <iframe
+            src="https://open.spotify.com/embed/album/4otkd9As6YaxxEkIjXPiZ6"
+            width="100%"
+            height="280"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
+          <iframe
+            src="https://open.spotify.com/embed/album/5DTP8GQPmmIa0snB8pGESz"
+            width="100%"
+            height="280"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
+          <iframe
+            src="https://open.spotify.com/embed/album/0EElG7PKno1CSiegVQJ1iJ"
+            width="100%"
+            height="280"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
+        </div>
+        <div id="first" class="album">
+          <h2>January 10, 2020</h2>
+          <iframe
+            src="https://open.spotify.com/embed/album/4SnWrk06dIt4ynFRLpNX6e"
+            width="100%"
+            class="favorite"
+            height="280"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
+        </div>
+        <h3>*All albums with a yellow outline are my personal favorites</h3>
+      </div>
+    </main>
+    <footer>
+      <p>
+        <script>
+          var today = new Date();
+          document.write("Made by Jeff Golota");
+          document.write("&nbsp&copy;");
+          document.write(today.getFullYear());
+        </script>
+      </p>
+    </footer>
+    <script src="../js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+/* basic styling for the page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Oswald", sans-serif;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+/* scrollbar */
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-track {
+  background: #3a3742;
+}
+body::-webkit-scrollbar-thumb {
+  background: #c5766f;
+}
+
+/* Nav Styles */
+.parent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 9vh;
+  background-color: #c5766f;
+}
+.logo {
+  background-image: url("../images/mh.png");
+  background-size: cover;
+  height: 50px;
+  width: 70px;
+  margin-top: 10px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  list-style: none;
+}
+.nav-links a {
+  color: #f3f1ee;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 15px;
+  transition: all 0.25s ease;
+}
+.nav-links a:hover {
+  color: #4c4857;
+  text-decoration: underline;
+}
+/* styling for the main content */
+.head {
+  background-color: #4c4857;
+  width: 80%;
+  margin: 10rem auto 0;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+}
+.head h1 {
+  padding-top: 5rem;
+  font-size: 300%;
+  color: #f3f1ee;
+  transition: color 0.5s ease;
+}
+.head h1:hover {
+  color: #c5766f;
+}
+.head img {
+  max-width: 100%;
+  height: 40%;
+  width: 40%;
+}
+.head img:hover {
+  color: #c5766f;
+}
+.body {
+  background-color: #747080;
+  width: 80%;
+  margin: auto;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+}
+.body p {
+  font-size: 200%;
+  padding: 1rem;
+}
+
+/* styling for the mobile menu */
+.mobile {
+  font-size: 200%;
+  cursor: pointer;
+  color: #f3f1ee;
+  display: none;
+}
+
+/* footer styling */
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  padding: 2rem;
+}
+
+/* Media query styling */
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 9vh;
+    background-color: #c5766f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .mobile {
+    margin-left: 20rem;
+    display: block;
+  }
+}
+@media screen and (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 9vh;
+    background-color: #c5766f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .mobile {
+    margin-left: 20rem;
+    display: block;
+  }
+}
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

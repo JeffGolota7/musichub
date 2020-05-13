@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MusicHub | About</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Description when you search on Google" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    <!--these make you appear on google faster-->
+    <link rel="icon" href="images/favicon.ico" />
+    <!--icon for the page-->
+    <link rel="stylesheet" href="styles/about.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="parent">
+        <nav>
+          <a href="index.html"><div class="logo"></div></a>
+          <ul class="nav-links">
+            <li>
+              <a href="feed.html">Feed</a>
+            </li>
+            <li>
+              <a href="discover.html">Discover</a>
+            </li>
+            <li>
+              <a id="current" href="about.html">About Me</a>
+            </li>
+          </ul>
+          <div class="mobile"><i class="fas fa-bars"></i></div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="me">
+        <div class="profile">
+          <iframe
+            src="https://open.spotify.com/follow/1/?uri=spotify:user:jeffgolota&size=detail&theme=dark&show-count=0"
+            width="300"
+            height="56"
+            scrolling="no"
+            frameborder="0"
+            style="border: none; overflow: hidden;"
+            allowtransparency="true"
+        ></iframe>
+        </div>
+        <h1 class="profile-description">This is my spotify account and some of my playlists</h1>
+        <h2 class="caption">My playlist of energetic rap songs</h1>
+        <iframe
+          src="https://open.spotify.com/embed/playlist/6QvjnSyIydO1yinmmQ0c1d"
+          class="playlist"
+          width="97%"
+          height="500"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+          style="margin: 1rem;"
+        ></iframe>
+        <h2 class="caption">My playlist of slower chill rap songs</h2>
+        <iframe
+          src="https://open.spotify.com/embed/playlist/6jBCQ3LvkY7N2L4dnfVNtg"
+          class="playlist"
+          width="97%"
+          height="500"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+          style="margin: 1rem;"
+        ></iframe>
+        <h2 class="caption">My playlist of classic rock songs</h2>
+        <iframe
+          src="https://open.spotify.com/embed/playlist/1SSMWfIWieNkoo0U856bI5"
+          class="playlist"
+          width="97%"
+          height="500"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+          style="margin: 1rem;"
+        ></iframe>
+        <h2 class="caption">My playlist of summertime rap music</h2>
+        <iframe
+          src="https://open.spotify.com/embed/playlist/2dsW0uToKCqqA6dWuskk8E"
+          class="playlist"
+          width="97%"
+          height="500"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+          style="margin: 1rem;"
+        ></iframe>
+      </div>
+    </main>
+    <footer>
+      <p>
+        <script>
+          var today = new Date();
+          document.write("Made by Jeff Golota");
+          document.write("&nbsp&copy;");
+          document.write(today.getFullYear());
+        </script>
+      </p>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
