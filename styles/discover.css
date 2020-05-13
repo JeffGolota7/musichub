@@ -243,12 +243,12 @@ footer {
     background-color: #1f1e22;
   }
   #cordae {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
   }
   #aaron {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
   }
   #chris {
     width: 200px;
@@ -256,8 +256,8 @@ footer {
     margin: auto;
   }
   #ak {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
   }
   #zale {
     width: 200px;
@@ -305,12 +305,12 @@ footer {
     background-color: #1f1e22;
   }
   #cordae {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
   }
   #aaron {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
   }
   #chris {
     width: 200px;
@@ -318,8 +318,8 @@ footer {
     margin: auto;
   }
   #ak {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
   }
   #zale {
     width: 200px;
@@ -350,14 +350,7 @@ footer {
     display: block;
   }
 }
-@media screen and (max-width: 320px) {
-  #zale {
-    margin-left: 25px;
-  }
-  #chris {
-    margin-left: 25px;
-  }
-}
+
 .nav-active {
   transform: translateX(0%);
 }
